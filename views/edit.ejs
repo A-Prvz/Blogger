@@ -1,0 +1,38 @@
+<%- include('header'); -%>
+<header class="masthead" style="background-image: url('/assets/img/edit-bg.jpg')">
+  <div class="container position-relative px-4 px-lg-5">
+      <div class="row gx-4 gx-lg-5 justify-content-center">
+          <div class="col-md-10 col-lg-8 col-xl-7">
+              <div class="page-heading">
+                  <h1>Edit</h1>
+                  <span class="subheading">Edit your Blogs</span>
+              </div>
+          </div>
+      </div>
+  </div>
+</header>
+<main class="mb-4">
+    <div class="container px-4 px-lg-5">
+      <div class="row gx-4 gx-lg-5 justify-content-center">
+          <div class="col-md-10 col-lg-8 col-xl-7">
+              <div class="my-5">
+                  <form class="" action="/update/<%=user.name %>/<%= post._id %>?_method=PUT" method="POST">
+                      <div class="form-floating">
+                            <input id="name" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter your Post-title" name="postTitle" value="<%= post.title %>">
+                            <label id="name" class="form-control">Post Title</label>
+                      </div><br>
+                      <div class="form-floating">
+                            <textarea class="form-control" id="message" placeholder="Enter your Post here..." style="height: 12rem" name="postBody"><%= post.content %></textarea>
+                            <label for="Post" >Post</label>
+                            <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                      </div>
+                      <br>
+                      <button type="submit" class="btn btn-primary">Publish</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+      </main>
+
+<%- include('footer'); -%>
