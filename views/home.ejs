@@ -25,7 +25,7 @@
                         <p class="post-meta">
                             Posted :
                             <a href="https://<%= post.email %>"><%= post.name %></a>
-                            <%= post.createdAt.toLocaleDateString("en-US", {day: "numeric",month: "long",year: "numeric"}) %> &emsp;   <i  style="margin-left:0" class="fa fa-thumbs-up" onclick="setColor('button', '#101010')"></i>
+                            <%= post.createdAt.toLocaleDateString("en-US", {day: "numeric",month: "long",year: "numeric"}) %>   <button><i style="margin-left:0" class="fa fa-thumbs-up"></i></button> 
                         </p>
                     </div>
                     <% }); %>
@@ -37,20 +37,7 @@
                 </div>
             </div>
         </div>
-        <script>
-            var count = 1;
-            function setColor(btn, color) {
-                var property = document.getElementById(btn);
-                if (count == 0) {
-                    property.style.backgroundColor = "#FFFFFF"
-                    count = 1;        
-                }
-                else {
-                    property.style.backgroundColor = "#7FFF00"
-                    count = 0;
-                }
-            }
-        </script>
+        
             
         <!-- <button type="button" class="btn btn-dark btn-floating"><a class="aa" href = "/compose">Compose</a></button> -->
 <%- include('footer') -%>
