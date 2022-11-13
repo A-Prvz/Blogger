@@ -20,14 +20,14 @@
                     <% postList.forEach(function(post){ %>
                     <div class="post-preview">
                         <a href="/home/posts/<%= post._id %>"><h2 class="post-title"><%= post.title %></h2>
-                        <h3 class="post-subtitle"><%- post.content.substring(0,100) -%> <a class="likeicon" href="">
-                            <i class="fa fa-thumbs-o-up" aria-hidden="true" ></i>
-                           </a></h3>
+                        <h3 class="post-subtitle"><%- post.content.substring(0,100) -%> </h3>
                         </a>
                         <p class="post-meta">
-                            Posted by
+                            Posted :
                             <a href="https://<%= post.email %>"><%= post.name %></a>
-                            <%= post.createdAt.toLocaleDateString("en-US", {day: "numeric",month: "long",year: "numeric"}) %>
+                            <%= post.createdAt.toLocaleDateString("en-US", {day: "numeric",month: "long",year: "numeric"}) %> <a class="likeicon" href="">
+                                <i class="fa fa-thumbs-o-up" aria-hidden="true" ></i>
+                               </a>
                         </p>
                         <a class="likeicon" href="">
                             <i class="fa fa-thumbs-o-up" aria-hidden="true" ></i>
