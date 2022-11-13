@@ -27,6 +27,9 @@
                             <a href="https://<%= post.email %>"><%= post.name %></a>
                             <%= post.createdAt.toLocaleDateString("en-US", {day: "numeric",month: "long",year: "numeric"}) %>
                         </p>
+                        <a class="likeicon" href="">
+                            <i class="fa fa-thumbs-o-up" aria-hidden="true" ></i>
+                           </a>
                     </div>
                     <% }); %>
                     <!-- Divider-->
