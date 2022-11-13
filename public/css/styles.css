@@ -51,7 +51,7 @@
   background-color: #0085A1;
   border-radius: 10px;
 }
-  .like-btn:active{
+  .like-btn.btn:active{
 
     background-color: #0085A1;
     border-radius: 10px;    
