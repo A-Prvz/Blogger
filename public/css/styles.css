@@ -41,14 +41,17 @@
 
 .like-btn:hover{
 
+  border: none;
   background-color: #0085A1;
-  border-color: #0085A1;
+  border-radius: 10px;
+
   
   }
   .like-btn:active{
 
     background-color: #0085A1;
-    border-color: #0085A1;
+    border-radius: 10px;    
+    border: none;
     
     }
 
