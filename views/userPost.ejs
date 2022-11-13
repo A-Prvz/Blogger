@@ -7,7 +7,7 @@
                             <h1><%= title %></h1>
                             <!-- <h2 class="subheading">Problems look mighty small from 150 miles up</h2> -->
                             <span class="meta">
-                                Posted by
+                                Posted :
                                 <a href="#!"><%= user.name %></a>
                                 on <%= date.toLocaleDateString("en-US", {day: "numeric",month: "long",year: "numeric"}) %>
                             </span>
@@ -29,6 +29,6 @@
         <div class="container px-4 px-lg-5">
             <a href="/edit/<%= user.name %>/<%= id %>" name="edit">Edit</a> .
             <a href="/<%= id %>" name="edit">Delete</a> . 
-            <a href="/next/<%= id %>" name="Next">Next</a>
+            <a href="/next/<%= id %>" name="Next">Report</a>
         </div>
 <%- include('footer') -%>
