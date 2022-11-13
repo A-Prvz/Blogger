@@ -42,19 +42,19 @@
 .like-btn{
 
   border: none;
-  border-radius: 10px;
+  border-radius: 7px;
 }
 
 .like-btn:hover{
 
   border: none;
   background-color: #0085A1;
-  border-radius: 10px;
+  border-radius: 7px;
 }
   .like-btn.btn:active{
 
     /* background-color: #0085A1; */
-    border-radius: 10px;    
+    border-radius: 7px;    
     border: none;
     
     }
