@@ -41,12 +41,14 @@
 
 .like-btn:hover{
 
-  background-color: darkblue;
+  background-color: #0085A1;
+  border-color: #0085A1;
   
   }
   .like-btn:active{
 
-    background-color: darkblue;
+    background-color: #0085A1;
+    border-color: #0085A1;
     
     }
 
