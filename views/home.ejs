@@ -20,7 +20,9 @@
                     <% postList.forEach(function(post){ %>
                     <div class="post-preview">
                         <a href="/home/posts/<%= post._id %>"><h2 class="post-title"><%= post.title %></h2>
-                        <h3 class="post-subtitle"><%- post.content.substring(0,100) -%></h3>
+                        <h3 class="post-subtitle"><%- post.content.substring(0,100) -%> <a class="likeicon" href="">
+                            <i class="fa fa-thumbs-o-up" aria-hidden="true" ></i>
+                           </a></h3>
                         </a>
                         <p class="post-meta">
                             Posted by
@@ -39,5 +41,5 @@
                 </div>
             </div>
         </div>
-        <button type="button" class="btn btn-dark btn-floating"><a class="aa" href = "/compose">Compose</a></button>
+        <!-- <button type="button" class="btn btn-dark btn-floating"><a class="aa" href = "/compose">Compose</a></button> -->
 <%- include('footer') -%>
