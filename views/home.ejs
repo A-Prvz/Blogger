@@ -25,9 +25,7 @@
                         <p class="post-meta">
                             Posted :
                             <a href="https://<%= post.email %>"><%= post.name %></a>
-                            <%= post.createdAt.toLocaleDateString("en-US", {day: "numeric",month: "long",year: "numeric"}) %> <a class="likeicon" href="">
-                                <i class="fa fa-thumbs-o-up" aria-hidden="true" ></i>
-                               </a>
+                            <%= post.createdAt.toLocaleDateString("en-US", {day: "numeric",month: "long",year: "numeric"}) %>    <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
                         </p>
                         <a class="likeicon" href="">
                             <i class="fa fa-thumbs-o-up" aria-hidden="true" ></i>
